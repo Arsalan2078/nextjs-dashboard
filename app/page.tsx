@@ -4,6 +4,7 @@ import Link from "next/link";
 import styles from "@/app/ui/home.module.css";
 import { lusitana } from "@/app/ui/fonts";
 import Image from "next/image";
+import heroMobile from "../public/hero-mobile.png";
 
 export default function Page() {
   return (
@@ -40,9 +41,8 @@ export default function Page() {
           />
 
           <Image
-            src={`/hero-mobile.png`}
-            width={560}
-            height={620}
+            src={heroMobile}
+            sizes="100vw"
             className="block md:hidden"
             alt="Screenshots of the dashboard project showing desktop version"
           />
